@@ -1,0 +1,10 @@
+npm init -y
+npm install node
+npm install express
+npm install ejs
+npm install express-session
+npm install mongoose
+npm install connect-mongo
+npm install express-ejs-layouts
+
+sudo brew services start mongodb/brew/mongodb-community

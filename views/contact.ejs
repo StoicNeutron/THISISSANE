@@ -1,0 +1,24 @@
+<div>
+    <p>Name: <%= data.name %> 
+    </p>
+    <p>G-Number: <%= data.g_number %>
+    </p>
+    <p>E-mail: <%= data.email %>
+    </p>
+    <form id="emailForm">
+        <div class="textarea">
+            <label style="margin-right: 20px;">Message: </label>
+            <textarea id="message" name="message" style="width: 350px; height: 100px;" required></textarea>
+        </div>
+        <div class="action_input">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Email sent');
+        });
+    </script>
+</div>
